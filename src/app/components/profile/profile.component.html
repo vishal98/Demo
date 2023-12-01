@@ -1,0 +1,128 @@
+<!-- <div style="margin-top: 20px;">
+    <div class="container" style="margin-top: 20px;">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <div class="row" *ngFor="let profileColumn of profileColumns, let i = index">
+                <div class="row">
+                    <p class="c-cvNGux c-cvNGux-kWyXas-size-md c-cvNGux-bGjDTb-color-primary c-cvNGux-idhzjXW-css">{{i+1}}. {{profileColumn.columnDisplayName}}</p>
+                </div>
+                <div class="row">
+                    <ng-container [ngSwitch]="profileColumn.type">
+                        <div class="c-dzWMGE" *ngSwitchCase="'options'">
+                            <div class="c-dzWMGE" *ngFor="let option of profileColumn.options">
+                                <div class="c-jlREAI">
+                                    <input [id]="option" type="radio" class="c-MBcFq c-MBcFq-idzhVIo-css" [value]="option" [name]="profileColumn.columnName"
+                                        [formControlName]="profileColumn.columnName" >
+                                    <label for="1a036398-6306-ec11-b6e6-00224841d07a" class="c-CYFcp c-CYFcp-iBNYMj-css">{{option}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+                
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit"/>
+        </form>
+    </div>
+</div> -->
+
+
+
+<div style="margin-top: 20px;">
+    <div class="container" style="margin-top: 20px;">
+        <div class="row">
+            <div class="col-sm-12 mb-3">
+                <div class="c-cocqDN">
+                    <h1 class="c-hOKJpM c-hOKJpM-lkXCtU-size-lg c-hOKJpM-bGjDTb-color-primary c-hOKJpM-ibXPaAo-css">Make a Plan</h1>
+                </div>
+                <p>Creating goals will create accountability and help you progress across different areas of your business.</p>
+            </div>
+            <div class="c-bniNie">
+                <div class="col-sm-12 mb-3">
+                    <div class="flex" style="flex-wrap: wrap;">
+                        <h2 class="c-hOKJpM c-hOKJpM-fqenVW-size-md c-hOKJpM-bGjDTb-color-primary c-hOKJpM-ikyjheb-css">Diagnostic tool
+                        </h2>
+                        <div class="c-cocqDN">
+                            <div class="c-gzTcVd c-gzTcVd-iClae-css">
+                                <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" color="#E37222" style="margin-right: 5px;">
+                                    <g transform="matrix(0.8333333333333334,0,0,0.8333333333333334,0,0)">
+                                        <path d="M14.25,21a2.25,2.25,0,0,1-4.5,0V17.25h4.5Z" fill="none" stroke="#E37222"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                        <path d="M14.25,17.25a8.639,8.639,0,0,0,6-8.25A8.25,8.25,0,0,0,3.75,9a8.639,8.639,0,0,0,6,8.25"
+                                            fill="none" stroke="#E37222" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5"></path>
+                                        <path d="M10.5,9.75H9a1.5,1.5,0,1,1,1.5-1.5Z" fill="none" stroke="#E37222"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                        <path d="M13.5,9.75H15a1.5,1.5,0,1,0-1.5-1.5Z" fill="none" stroke="#E37222"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                        <path d="M10.5 17.25L10.5 9.75 13.5 9.75 13.5 17.25" fill="none" stroke="#E37222"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                        <path d="M9.75 20.25L14.25 20.25" fill="none" stroke="#E37222" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"></path>
+                                    </g>
+                                </svg>
+                                <span>Pre-Start</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-BKoef c-BKoef-ijgyHco-css">
+                        <h4 class="c-hOKJpM c-hOKJpM-eQRsLC-size-xs c-hOKJpM-bGjDTb-color-primary">Profile</h4>
+                        <div class="c-hbzwMR"><span class="c-iqwZFl c-iqwZFl-ijLmwpH-css"></span><span
+                                class="c-iqwZFl c-iqwZFl-icYvwsv-css"></span><span class="c-iqwZFl c-iqwZFl-icYvwsv-css"></span><span
+                                class="c-iqwZFl c-iqwZFl-icYvwsv-css"></span><span class="c-iqwZFl c-iqwZFl-icYvwsv-css"></span><span
+                                class="c-iqwZFl c-iqwZFl-icYvwsv-css"></span><span class="c-iqwZFl c-iqwZFl-icYvwsv-css"></span><span
+                                class="c-iqwZFl c-iqwZFl-icYvwsv-css"></span><span class="c-iqwZFl c-iqwZFl-icYvwsv-css"></span><span
+                                class="c-iqwZFl c-iqwZFl-icYvwsv-css"></span><span class="c-iqwZFl c-iqwZFl-icYvwsv-css"></span></div>
+                        <p class="c-cvNGux c-cvNGux-fAKXXr-size-sm c-cvNGux-bGjDTb-color-primary c-cvNGux-idhzjXW-css"><span
+                                class="c-drrTp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.2695 20.8827L9.69762 17.3148C9.41429 17.2147 9.16068 17.045 8.96014 16.8212C8.75961 16.5974 8.6186 16.3268 8.5501 16.0342C8.48159 15.7416 8.4878 15.4365 8.56813 15.147C8.64847 14.8575 8.80036 14.5928 9.00982 14.3773L15.0137 8.37342C15.2355 8.16555 15.5062 8.01703 15.8007 7.94165C16.0951 7.86627 16.4039 7.86646 16.6983 7.9422C16.9927 8.01794 17.2631 8.16678 17.4847 8.37492C17.7062 8.58306 17.8716 8.84376 17.9655 9.13286L21.5192 18.7047C21.6179 19.0148 21.6281 19.3463 21.5486 19.6619C21.4691 19.9775 21.3031 20.2646 21.0693 20.4909C20.8355 20.7173 20.5432 20.8739 20.2252 20.9431C19.9072 21.0124 19.5762 20.9914 19.2695 20.8827V20.8827Z"
+                                        stroke="#404041" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.22168 12.1857C5.85799 11.8306 6.60314 11.7235 7.31373 11.8848" stroke="#404041"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M8.48689 8.10116C8.08112 7.48945 7.91294 6.7505 8.01402 6.02344" stroke="#404041"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M11.7841 3C11.2819 4.53848 11.348 6.20605 11.9704 7.69995" stroke="#404041"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M3.71646 7.38506C4.11214 7.38506 4.43291 7.06429 4.43291 6.6686C4.43291 6.27292 4.11214 5.95215 3.71646 5.95215C3.32077 5.95215 3 6.27292 3 6.6686C3 7.06429 3.32077 7.38506 3.71646 7.38506Z"
+                                        stroke="#404041" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></span><span>You’re doing great, keep on going.</span></p>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                        <div class="row" *ngFor="let profileColumn of profileColumns, let i = index">
+                            <div class="row">
+                                <p class="c-cvNGux c-cvNGux-kWyXas-size-md c-cvNGux-bGjDTb-color-primary c-cvNGux-idhzjXW-css">{{i+1}}. {{profileColumn.columnDisplayName}}</p>
+                            </div>
+                            <div class="row">
+                                <ng-container [ngSwitch]="profileColumn.type">
+                                    <div class="c-dzWMGE" *ngSwitchCase="'options'">
+                                        <div class="c-dzWMGE" *ngFor="let option of profileColumn.options">
+                                            <div class="c-jlREAI">
+                                                <input [id]="option+i" type="radio" class="c-MBcFq c-MBcFq-idzhVIo-css" [value]="option" [name]="profileColumn.columnName"
+                                                    [formControlName]="profileColumn.columnName" (change)="onRadioChange($event, profileColumn.columnName, option)" >
+                                                <label class="c-CYFcp" [ngClass]="{ 'c-CYFcp-idHCTho-css': isSelected(profileColumn.columnName, option),
+                                                        'c-CYFcp-iBNYMj-css': !isSelected(profileColumn.columnName, option)
+                                                    }" [for]="option+i">{{option}}</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </div>
+                        <div class="c-dhzjXW">
+                            <button [disabled]="profileForm.invalid" class="c-ePTrFS c-ePTrFS-bFNYoc-size-md c-ePTrFS-dAZgWW-variant-primary c-ePTrFS-ichCXWj-css undefined">
+                                <!-- Next
+                                <span class="c-kshkDy">: Accounting and Finance</span> -->
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
